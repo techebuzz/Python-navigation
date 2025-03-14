@@ -1,0 +1,26 @@
+#Ask the User to put numbers and operation
+num1 = float(input("Write the first number: "))
+num2 = float(input("Write the second number: "))
+operation = (input("Write any operation(+,-,*,**,/):"))
+#calculator performance and result
+if operation == "*":
+    result = num1*num2
+    print(f"{num1} {operation} {num2}  = {result}")  
+elif operation == "/":
+    if num2 !=0 :
+        result = num1/num2
+    else:
+        result = " Syntax Error"
+        print(f"{num1} {operation} {num2}  = {result}")  
+elif operation == "-":
+    result = num1-num2
+    print(f"{num1} {operation} {num2}  = {result}")  
+elif operation == "+":
+    result = num1+num2 
+    print(f"{num1} {operation} {num2}  = {result}")  
+elif operation == "**2":
+     result = num1**2,num2**2
+     print(f"{num1} {operation} {num2} {operation} = {result}")  
+else:
+    result = "invalid operation"
+
